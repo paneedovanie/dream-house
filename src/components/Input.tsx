@@ -4,7 +4,7 @@ type InputProps = HTMLAttributes<HTMLInputElement> & {
   placeholder?: string;
 };
 
-export default function (props: InputProps) {
+export default function Input(props: InputProps) {
   return (
     <input
       {...props}

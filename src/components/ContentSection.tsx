@@ -10,7 +10,7 @@ const MainMessage = () => {
     <h2 className="text-5xl mb-5">
       {aniEnded ? (
         <>
-          <div>See houses you've</div>
+          <div>See houses you&apos;ve</div>
           <div>
             <span className="underline">never</span>
             &nbsp;seen before
@@ -26,7 +26,7 @@ const MainMessage = () => {
   );
 };
 
-export default function () {
+export default function ContentSection() {
   const items = [
     {
       title: "Lorem ipsum dolor sit amet",

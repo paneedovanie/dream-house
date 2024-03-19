@@ -3,7 +3,7 @@ import Button from "./Button";
 import { InView } from "react-intersection-observer";
 import TypingEffect from "./TypingEffect";
 
-export default function () {
+export default function FeatureSection() {
   return (
     <InView triggerOnce threshold={1}>
       {({ inView, ref, entry }) => (

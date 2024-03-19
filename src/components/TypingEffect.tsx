@@ -8,7 +8,7 @@ type TypingEffectProps = {
   onEnded?: () => void;
 };
 
-export default function (props: TypingEffectProps) {
+export default function TypingEffect(props: TypingEffectProps) {
   const textRef = useRef<HTMLHeadingElement>(null);
 
   const { ref, inView, entry } = useInView({ triggerOnce: true });
@@ -36,7 +36,7 @@ export default function (props: TypingEffectProps) {
       }
       return;
     }, 100);
-  }, [props.started, inView]);
+  }, [props, props.started, inView]);
 
   useEffect(() => {
     if (!textRef.current) {
@@ -47,7 +47,7 @@ export default function (props: TypingEffectProps) {
       .split("")
       .map((item) => `<span class="opacity-0">${item}</span>`)
       .join("");
-  });
+  }, [props.text]);
 
   return (
     <div ref={ref} className="inline">

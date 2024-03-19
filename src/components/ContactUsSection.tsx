@@ -3,7 +3,7 @@ import Button from "./Button";
 import Input from "./Input";
 import Textarea from "./Textarea";
 
-export default function () {
+export default function ContactUsSection() {
   return (
     <section className="pb-[128px]">
       <div className="mx-auto max-w-screen-lg flex gap-10">

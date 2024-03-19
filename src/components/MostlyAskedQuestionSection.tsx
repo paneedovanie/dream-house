@@ -2,7 +2,7 @@ import Image from "next/image";
 import TypingEffect from "./TypingEffect";
 import { InView } from "react-intersection-observer";
 
-export default function () {
+export default function MostlyAskedQuestionSection() {
   const questions = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "Lorem ipsum dolor sit amet consectetur adipisicing elit.",

@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-export default function () {
+export default function Header() {
   const navItems = [
     {
       label: "Home",

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function () {
+export default function Footer() {
   const links = [
     [{ label: "Home" }, { label: "About Us" }],
     [{ label: "Promo" }, { label: "Routes" }],
@@ -19,12 +19,12 @@ export default function () {
           <div className="flex-1">
             <div className="font-bold mb-5">Quick Links</div>
             <div className="flex justify-between">
-              {links.map((col) => {
+              {links.map((col, i) => {
                 return (
-                  <ul className="flex flex-col gap-2">
-                    {col.map((item) => {
+                  <ul className="flex flex-col gap-2" key={i}>
+                    {col.map((item, j) => {
                       return (
-                        <li>
+                        <li key={`i,j`}>
                           <Link href="#">{item.label}</Link>
                         </li>
                       );

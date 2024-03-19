@@ -5,7 +5,7 @@ type TextareaProps = HTMLAttributes<HTMLTextAreaElement> & {
   rows?: number;
 };
 
-export default function (props: TextareaProps) {
+export default function Textarea(props: TextareaProps) {
   return (
     <textarea
       {...props}
